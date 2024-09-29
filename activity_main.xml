@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2196F3"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#2196F3"
+                android:backgroundTint="@color/black"
+                android:backgroundTintMode="add"
+                android:text="Gerencidor de Notas"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nome"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe seu nome" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe seu e-mail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Idade"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edIdade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe sua Idade" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Disciplina"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edDisciplina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe a Disciplina" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1ºBimestre"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edNota1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe nota do 1ºBimestre" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2ºBimestre"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edNota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe nota do 2ºBimestre" />
+
+            <Button
+                android:layout_width="328dp"
+                android:layout_height="match_parent"
+                android:textColor="#F7FBF8"
+                android:text="Enviar"
+                android:textSize="26sp"
+                android:backgroundTint="@color/black"
+                android:id="@+id/btEnviar"/>
+
+            <Button
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:textColor="#F7FBF8"
+                android:backgroundTint="@color/black"
+                android:text="Limpar"
+                android:textSize="26sp"
+                android:id="@+id/btLimpar"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvResposta"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edErro"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
